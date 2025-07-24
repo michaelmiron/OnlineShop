@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineShop API Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        .endpoint { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .method { font-weight: bold; color: white; padding: 4px 8px; border-radius: 3px; }
+        .get { background-color: #28a745; }
+        .post { background-color: #007bff; }
+        .put { background-color: #ffc107; color: black; }
+        .delete { background-color: #dc3545; }
+        code { background-color: #f8f9fa; padding: 2px 4px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>OnlineShop API Documentation</h1>
+    
+    <h2>Base URL</h2>
+    <code>http://localhost:5001/api</code>
+    
+    <h2>Products Endpoints</h2>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/products</code>
+        <p>Get all products</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/products/:id</code>
+        <p>Get a specific product by ID</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/products/search/:query</code>
+        <p>Search products by name, category, or description</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method post">POST</span> <code>/products</code>
+        <p>Create a new product</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method put">PUT</span> <code>/products/:id</code>
+        <p>Update a product</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method delete">DELETE</span> <code>/products/:id</code>
+        <p>Delete a product</p>
+    </div>
+    
+    <h2>Orders Endpoints</h2>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/orders</code>
+        <p>Get all orders</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/orders/:id</code>
+        <p>Get a specific order by ID</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/orders/customer/:email</code>
+        <p>Get orders by customer email</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method post">POST</span> <code>/orders</code>
+        <p>Create a new order</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method put">PUT</span> <code>/orders/:id/status</code>
+        <p>Update order status</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method delete">DELETE</span> <code>/orders/:id</code>
+        <p>Delete an order</p>
+    </div>
+</body>
+</html>
